@@ -39,5 +39,13 @@ namespace SimpleMathTest
             Assert.Equal(0, math.Modular(5, 5));
         }
 
+        [Fact]
+        // failing test case for modular
+        public void FailTestModular()
+        {
+            var math = new SimpleMath.MathFunctions();
+            Assert.Equal(5, math.Modular(5, 5));
+        }
+
     }
 }
